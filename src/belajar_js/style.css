@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  margin-top: 40px;
+}
+
+.container {
+  background-color: rgb(233, 233, 233);
+  min-width: 50%;
+  min-height: 100px;
+  position: absolute;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.task input {
+  width: 250px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+.task button {
+  width: 70px;
+  background-color: rgb(44, 44, 234);
+  border: none;
+  color: white;
+  border-radius: 14px;
+}
+
+.isi {
+  border-radius: 10px;
+  width: 90%;
+  position: relative;
+  left: 20px;
+  background-color: #ffffff;
+  /* padding: 10px 20px; */
+  margin-top: 10px;
+}
+
+.tugas {
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.tugas span {
+  font-size: 17px;
+  font-weight: 200px;
+}
+
+.delete {
+  background-color: rgb(44, 44, 234);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+}

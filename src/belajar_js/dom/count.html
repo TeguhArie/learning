@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 10px;
+        color: rgb(147, 177, 166);
+      }
+
+      .card {
+        border-radius: 10px;
+        background-color: rgba(4, 13, 18, 1.1);
+      }
+
+      .content {
+        width: 230px;
+        height: auto;
+        margin: 30px;
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .content button {
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 10px;
+        background-color: rgb(24, 61, 61);
+        border-radius: 16px;
+        color: rgb(147, 177, 166);
+        transform: translateY(20px);
+        border: 1px;
+      }
+
+      .content button:hover {
+        background-color: rgb(92, 131, 116);
+      }
+
+      .more {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h2>01</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <button>Read More</button>
+          <div class="more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              veritatis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>02</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>Read More</button>
+          <div class="more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              veritatis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+
+      // function toggleDetails(event) {
+      //   event.preventDefault();
+      //   const card = event.target.closest('.card');
+      //   const details = card.querySelector('.details');
+      //   details.style.display = details.style.display === 'block' ? 'none' : 'block';
+      // }
+      // function toggleDetails(event) {
+      //   // event.preventDefault();
+      //   const card = event.target.closest('.card');
+      //   const cardContent = card.querySelector('.card-content');
+      //   const details = card.querySelector('.details');
+        
+      //   if (cardContent.style.display === 'none') {
+      //     cardContent.style.display = 'block';
+      //     details.style.display = 'none';
+      //   } else {
+      //     cardContent.style.display = 'none';
+      //     details.style.display = 'block';
+      //   }
+      // }
+      
+    </script>
+  </body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card dengan Detail</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .details {
+      display: none;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    .show-details-btn {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      text-align: center;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://via.placeholder.com/300" alt="Card Image">
+  <div class="card-content">
+    <h3>Card Title</h3>
+    <p>This is a simple card with some content.</p>
+    <a href="#" class="show-details-btn" onclick="toggleDetails(event)">Show Details</a>
+    <div class="details">
+      <p>Additional details go here.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html> -->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ulang = true;
+      while (ulang) {
+        let c = Math.floor(Math.random() * 10) + 1;
+
+        let guest = prompt("pilih angka 1-10");
+
+        let hasil = "";
+        for(let i = 3; i >= 1; i--){
+          if (guest == c){
+            hasil = "benar";
+            alert ("angka tebakan anda " + hasil + ".");
+            break;
+          } else if (guest != c && i > 1){
+            hasil = guest < c ? "terlalu rendah" : "terlalu tinggi";
+             guest = prompt("angka tebakan anda " + hasil + ".\nCoba lagi" + ".\nKesempatan anda tersisa" + i);
+          }else if (guest != c && i == 1){
+            hasil = "salah"
+
+            alert("angka tebakan anda " + hasil + ".\nKesempatan anda habis");
+          }
+        }
+        ulang = confirm("lagi");
+      }
+    </script>
+  </body>
+</html>

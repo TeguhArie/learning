@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    background-color: #10002b;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+}
+
+.nav li,
+nav ul{
+    display: flex;
+    gap: 30px;
+}

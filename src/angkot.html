@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let penumpang = [];
+
+      const tambahPenumpang = (namaPenumpang, penumpang) => {
+        if (penumpang.length == 0) {
+          penumpang.push(namaPenumpang);
+        } else {
+          for (let i = 0; 1 < penumpang.length; i++) {
+            if (penumpang[i] == undefined) {
+              penumpang[i] = namaPenumpang;
+            } else if (penumpang[i] == namaPenumpang) {
+              console.log(namaPenumpang + "sudah ada");
+            } else if (i == penumpang.length - 1) {
+              penumpang.push(namaPenumpang);
+            }                         
+          }
+        }
+        return penumpang;
+      };
+
+      const hapusPenumpang = (namaPenumpang, penumpang) => {
+        if (penumpang.length == 0) {
+          console.log("angkot masih kosong");
+        } else {
+          for (let j = 0; j < penumpang.length; j++) {
+            if (namaPenumpang == penumpang[j] ? "undefined" : "ada") {
+              penumpang[j] = undefined;
+            }
+          }
+        }
+        return penumpang;
+      };
+
+      class angkot {
+        constructor(sopir, trayek, penumpang, kas) {
+          this.sopir = sopir;
+          this.trayek = trayek;
+          this.penumpang = penumpang;
+          this.kas = kas;
+
+          this.penumpangNaik = (namaPenumpang, penumpang) => {
+            if (this.penumpang.length == 0) {
+              this.penumpang.push(namaPenumpang);
+              return this.penumpang;
+            } else {
+              for (let i = 0; i < this.penumpang.length; i++) {
+                if (this.penumpang[i] == undefined) {
+                  this.penumpang[i] = undefined;
+                } else if (this.penumpang[i] == namaPenumpang) {
+                  console.log(namaPenumpang + " sudah ada");
+                } else if (i == this.penumpang.length - 1) {
+                  this.penumpang.push(namaPenumpang);
+                }
+              }
+            }
+          };
+
+          this.penumpangTurun = (namaPenumpang, bayar) => {
+            if (this.penumpang.length == 0) {
+              console.log("angkot masih kosong");
+              return false;
+            }
+
+            for (let j = 0; j < this.penumpang.length; j++) {
+              if (this.penumpang[j] == namaPenumpang) {
+                this.penumpang[j] = undefined;
+                this.kas += bayar;
+                return penumpang;
+              }
+            }
+          };
+        }
+      }
+
+      let angkot1 = new angkot("santoso", ["grogol", "pos pengumben"], [], 0);
+      let angkot2 = new angkot("asep", ["tanah abang", "meruya"], [], 0);
+    </script>
+  </body>
+</html>

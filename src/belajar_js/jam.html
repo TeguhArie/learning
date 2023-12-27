@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: #ddd;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      .jam {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="jam"></p>
+    </div>
+    <script>
+      const p = document.querySelector(".jam");
+      setInterval(() => {
+        const d = new Date();
+        const h = d.getHours();
+        const m = d.getMinutes();
+        const s = d.getSeconds();
+        const ms = d.getMilliseconds();
+
+        p.innerHTML = `${h} : ${m} : ${s} : ${ms}`;
+      }, 1000);
+    </script>
+  </body>
+</html>
