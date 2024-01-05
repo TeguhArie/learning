@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var nama = prompt("nama : ");
+
+			var nilai1 = prompt("masukan nilai 1 :");
+			var nilai2 = prompt("masukan nilai 2 : ");
+
+			var nilaiAkhir = parseInt(nilai1) + parseInt(nilai2) / 2;
+			let keterangan;
+
+			if (grade == "a" || "b" || "c") {
+				keterangan = "lulus";
+			} else {
+				keterangan = "tidak lulus";
+			}
+
+			var grade;
+			if (nilaiAkhir >= 75) {
+				grade = "c";
+			} else if (nilaiAkhir >= 80) {
+				grade = "b";
+			} else if (nilaiAkhir >= 90) {
+				grade = "a";
+			} else if (nilaiAkhir <= 74) {
+				grade = "d";
+			} else if (nilaiAkhir <= 60) {
+				grade = "e";
+			} else {
+				grade = "f";
+			}
+
+			document.write(`nilai akhir : ${nilai1} / ${nilai2} <br>`);
+
+			document.write(
+				`siswa dengan nama: ${nama} <br> di nyatakan: ${keterangan} <br> dan mendapat peringkat: ${grade} mapel basis data`,
+			);
+		</script>
+	</body>
+</html>
