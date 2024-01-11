@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var makanan = prompt(
+				"masukan menu pilihan anda(1. makanan atau 2.minuman);",
+			);
+			//
+
+			switch (makanan) {
+				case "makanan":
+					var menuMakanan = prompt(
+						"menu makanan: A.Ayam Goreng 20k B.Ayam Bakar 30k",
+					);
+					document.write(`kamu memilih makanan: ${menuMakanan}`);
+					break;
+				case "minuman":
+					var menuMinuman = prompt("menu minuman: A.Es Teh 5k B.Es Jeruk 10k");
+					document.write(`kamu memilih minuman: ${menuMinuman}`);
+					break;
+				default:
+					"tidak ada";
+					break;
+			}
+		</script>
+	</body>
+</html>
