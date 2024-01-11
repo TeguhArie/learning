@@ -13,15 +13,22 @@
 			//
 
 			switch (makanan) {
-				case "makanan":
-					var menuMakanan = prompt(
-						"menu makanan: A.Ayam Goreng 20k B.Ayam Bakar 30k",
-					);
-					document.write(`kamu memilih makanan: ${menuMakanan}`);
+				case "1":
+					var menuMakanan = prompt("menu makanan: A.Ayam Goreng B.Ayam Bakar");
+					if (menuMakanan === "A") {
+						document.write(`kamu memilih makanan: Ayam Goreng 10k`);
+					} else {
+						document.write(`kamu memilih makanan: Ayam Bakar 30k`);
+					}
+
 					break;
-				case "minuman":
-					var menuMinuman = prompt("menu minuman: A.Es Teh 5k B.Es Jeruk 10k");
-					document.write(`kamu memilih minuman: ${menuMinuman}`);
+				case "2":
+					var menuMinuman = prompt("menu minuman: A.Es Teh B.Es Jeruk");
+					if (menuMinuman === "A") {
+						document.write(`kamu memilih makanan: Es Teh 5k`);
+					} else {
+						document.write(`kamu memilih makanan: Es Jeruk 10k`);
+					}
 					break;
 				default:
 					"tidak ada";
