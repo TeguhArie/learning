@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="hasil">
+			<h5 class="nama-barang"></h5>
+			<h5 class="harga"></h5>
+			<h5 class="jumlah"></h5>
+			<h5 class="total"></h5>
+			<h5 class="diskon"></h5>
+			<h5 class="bayar"></h5>
+		</div>
+		<script>
+			var nama = document.querySelector(".nama-barang");
+			var hargaBarang = document.querySelector(".harga");
+			var jumlahBarang = document.querySelector(".jumlah");
+			var totalHarga = document.querySelector(".total");
+			var diskonBarang = document.querySelector(".diskon");
+			var bayarBarang = document.querySelector(".bayar");
+
+			var namaBarang = prompt(
+				"1. Handphone 1.000.000 \n2. Laptop 10.000.000 : ",
+			);
+			var harga;
+			var jumlah;
+			var diskon;
+			var bayar;
+
+			switch (namaBarang) {
+				case "1":
+					jumlah = prompt("masukkan jumlah handphone :");
+					namaBarang = "Handphone";
+					harga = parseInt(1000000);
+					break;
+				case "2":
+					jumlah = prompt("masukkan jumlah laptop");
+					namaBarang = "laptop";
+					harga = parseInt(10000000);
+					break;
+			}
+
+			var total = harga * jumlah;
+
+			if (jumlah >= 5 || jumlah < 10) {
+				diskon = (total * 10) / 100;
+				bayar = total - diskon;
+			} else if (jumlah >= 10 || jumlah < 20) {
+				diskon = (total * 15) / 100;
+				bayar = total - diskon;
+			} else if (jumlah >= 20 || jumlah < 30) {
+				diskon = (total * 20) / 100;
+				bayar = total - diskon;
+			}
+
+			nama.innerHTML = "Barang : " + namaBarang;
+			hargaBarang.innerHTML = "Harga : " + harga;
+			jumlahBarang.innerHTML = "Jumlah : " + jumlah;
+			totalHarga.innerHTML = "Total : " + total;
+			diskonBarang.innerHTML = "Diskon : " + diskon;
+			bayarBarang.innerHTML = "Bayar : " + bayar;
+		</script>
+	</body>
+</html>

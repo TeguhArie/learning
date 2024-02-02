@@ -1,1 +1,16 @@
-[{"nama":"teguh","umur":"17"}]
+[
+	{ "id": 1, "nama": "teguh", "kelas": "12", "password": "123456" },
+	{ "id": 3, "nama": "Aul", "kelas": "12", "password": "12345678" },
+	{ "id": 1, "nama": "teguh", "kelas": "12", "password": "123456" },
+	{ "id": 3, "nama": "Aul", "kelas": "12", "password": "12345678" },
+	{ "id": 4, "nama": "teguh", "kelas": "12", "password": "12345678" },
+	{ "id": 1, "nama": "teguh", "kelas": "12", "password": "123456" },
+	{ "id": 3, "nama": "Aul", "kelas": "12", "password": "12345678" },
+	{ "id": 4, "nama": "teguh", "kelas": "12", "password": "12345678" },
+	{ "id": 5, "nama": "satria", "kelas": "11", "password": "56789" },
+	{ "id": 1, "nama": "teguh", "kelas": "12", "password": "123456" },
+	{ "id": 3, "nama": "Aul", "kelas": "12", "password": "12345678" },
+	{ "id": 4, "nama": "teguh", "kelas": "12", "password": "12345678" },
+	{ "id": 5, "nama": "satria", "kelas": "11", "password": "56789" },
+	{ "id": 6, "nama": "teguh", "kelas": "123", "password": "123456789" }
+]
